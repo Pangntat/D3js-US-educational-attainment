@@ -32,8 +32,9 @@
         </nav>
     </header>
 <body>
-
-    <div
+	
+	
+    <div id="text-to-speech"> 
     <h1 class="title">Educational Attainment in the United States</h1>
         
 	
@@ -73,6 +74,7 @@
     <div>
         <svg id="stacked-bar-chart"></svg>
     </div>
+	</div>
 
     
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -95,6 +97,10 @@
 /* scrollTop() >= 240
    Should be equal the the height of the header
  */
+	<script>
+document.getElementById("text-to-speech").onmouseover = function() {mouseOver(responsiveVoice.speak("UK English Male",{volume: 1});)};
+document.getElementById("text-to-speech").onmouseout = function() {mouseOut(responsiveVoice.cancel();)};
+	</script>
 	
 </script>
 
