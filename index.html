@@ -99,10 +99,10 @@
  */
 	<script>
 document.getElementById("text-to-speech").onmouseover = function() {mouseOver()};
-document.getElementById("demo").onmouseout = function() {mouseOut()};
+document.getElementById("text-to-speech").onmouseout = function() {mouseOut()};
 
 function mouseOver() {
-    document.getElementById("text-to-speech") = responsiveVoice.speak();
+    document.getElementById("text-to-speech").onVoiceReady = responsiveVoice.speak(text-to-speech);
 }
 
 function mouseOut() {
