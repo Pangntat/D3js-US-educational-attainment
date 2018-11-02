@@ -98,8 +98,8 @@
    Should be equal the the height of the header
  */
 	<script>
-document.getElementById("text-to-speech").onmouseover = function() {onmouseover(responsiveVoice.speak("UK English Male",{volume: 1});)};
-document.getElementById("text-to-speech").onmouseout = function() {onmouseout(responsiveVoice.cancel();)};
+document.getElementById("text-to-speech").onmouseover = function() {responsiveVoice.speak("UK English Male",{volume: 1});};
+document.getElementById("text-to-speech").onmouseout = function() {responsiveVoice.cancel();};
 	</script>
 	
 </script>
