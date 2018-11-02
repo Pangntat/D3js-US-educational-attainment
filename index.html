@@ -11,6 +11,16 @@
   <header>
        <nav>
     <ul>
+	     
+	  <audio id="sound" src="Music.wav"></audio>
+    <a onmouseover = "playSound();"></a>
+    <script>
+        function playSound() {
+          var sound = document.getElementById("sound");
+          sound.play();
+      }
+        
+        </script>
       <li><a href="#top" >Top</a></li>
       <li><a href="#national">National</a></li>
       <li><a href="#regional">Regional</a></li>
