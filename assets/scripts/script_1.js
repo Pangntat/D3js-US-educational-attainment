@@ -14,6 +14,7 @@ var donut = donutChart()
         d3.select('#pie-chart')
             .datum(data) // bind data to the div
             .call(donut); // draw chart in div
+            responsiveVoice.speak(donut ,"UK English Male",{volume: 1});
     });
 
 function donutChart() {
